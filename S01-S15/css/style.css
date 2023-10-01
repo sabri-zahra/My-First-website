@@ -38,6 +38,7 @@ html {
 body {
   background-color: var(--bg-color);
   font-family: nf;
+  flex: auto;
 }
 header {
   display: flex;
@@ -82,7 +83,7 @@ li a {
 }
 
 button {
-  background-color: rgb(135, 171, 222);
+  background-color: rgb(12, 100, 224);
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -90,7 +91,7 @@ button {
 }
 
 button i {
-  color: #f40d0d;
+  color: #710df4;
   font-size: 1.1rem;
 }
 
@@ -302,6 +303,8 @@ footer {
   background-color: var(--bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
+  width: inherit;
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,4 +492,7 @@ figcaption {
   text-overflow: clip;
   display: inline;
   text-overflow: ellipsis;
+}
+.back {
+  color: black;
 }

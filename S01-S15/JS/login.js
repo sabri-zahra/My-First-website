@@ -1,5 +1,5 @@
 //const { createElement } = require("react");
-const form = document.querySelector("form");
+const form = document.querySelector(".form");
 const userName = document.querySelector("#Username");
 //console.log(userName);
 const passWord = document.querySelector("#Password");
@@ -8,11 +8,11 @@ const submitForm = document.querySelector("#submit");
 form.addEventListener(
   "submit",
   fetch("https://jsonplaceholder.typicode.com/posts", {
-    method: "POST",
+    method: "post",
     body: JSON.stringify({
       title: `${userName}`,
-      body: `${passWord}`,
-      userId: `${Email}`,
+      pass: `${passWord}`,
+      email: `${Email}`,
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
